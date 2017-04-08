@@ -4,7 +4,6 @@ import urllib2
 import urllib
 import re
 
-#修改编码
 import sys
 reload(sys)
 sys.setdefaultencoding('utf-8')
