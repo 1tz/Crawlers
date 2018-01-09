@@ -18,7 +18,6 @@ r = requests.get('https://www.taptap.com/topic/96965', verify=True)
 soup = BeautifulSoup(r.text, "html.parser")
 result_raw = soup.find('div', {'class': 'main-first-body bbcode-body'})
 result_lines = str(result_raw).split('<br/>')
-result = []
 
 for oneline in result_lines:
     if oneline == "":
